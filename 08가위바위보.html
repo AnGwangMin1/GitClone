@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="srp.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="score">
+        <p>SCORE <span id="usc"> 0 </span> : <span id="csc"> 0</span></p>
+        <button class="reset" onclick="onReset()">
+          <i class="fa fa-refresh"></i>
+        </button>
+      </div>
+
+      <!-- 결과 출력 -->
+      <div id="result">
+        <div class="user">
+          <h6>YOU</h6>
+          <div id="usel"><img src="img/s.png" alt="Scissors" /></div>
+          <!-- <p class="usel">Scissors</p> -->
+        </div>
+        <span class="vs"></span>
+        <div class="com">
+          <h6>COM</h6>
+          <div id="csel"><img src="img/p.png" alt="" /></div>
+          <!-- <p class="csel">Paper</p> -->
+        </div>
+      </div>
+      <div id="result-msg">GAME START</div>
+
+      <div class="select">
+        <button class="srp" onclick="onButtonClick('가위')">
+          <img src="img/s.png" />
+        </button>
+        <button class="srp" onclick="onButtonClick('바위')">
+          <img src="img/r.png" />
+        </button>
+        <button class="srp" onclick="onButtonClick('보')">
+          <img src="img/p.png" />
+        </button>
+      </div>
+    </div>
+
+    <!-- <script>
+        function info(){
+            alert("가위바위보 게임을 시작!!!");
+        }
+    </script> -->
+    <script src="srp.js"></script>
+  </body>
+</html>
